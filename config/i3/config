@@ -1,4 +1,3 @@
-
 set $sup Mod4
 set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
@@ -6,8 +5,8 @@ set $mod Mod4
 font pango:DejaVu Mono Sans 5
 bindsym $sup+p exec rofi-pass
 
-gaps inner 10 
-gaps outer 3 
+# gaps inner 10 
+#gaps outer 3 
 
 # Use Mouse+$sup to drag floating windows to their wanted position
 floating_modifier $sup
@@ -22,6 +21,7 @@ bindsym $sup+c exec termite -t "audio visualizer" -e cava
  
 # start a terminal
 bindsym $sup+Return exec termite -e /bin/zsh
+bindsym $sup++Shift+Return exec termite -d $(xcwd) -e /bin/zsh
 
 # kill focused window
 bindsym $sup+Shift+q kill
